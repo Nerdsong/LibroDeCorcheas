@@ -1,5 +1,5 @@
 const ARRAY_BASE = [0, 0, 0, 0, 0, 0, 0, 0];
-const imagenSemiCorchea = "𝅘𝅥𝅰"
+const imagenFusa = "𝅘𝅥𝅰"
 const imagenSilencio = "𝅀"
 
 let arrayModificable2 = [];
@@ -9,19 +9,11 @@ let arrayModificable5 = [];
 let arrayModificable6 = [];
 let arrayModificable7 = [];
 let arrayModificable8 = [];
-let cantidadDeUnos = 1;
 let arrayContenedor = [];
 let arrayParaMostrar= [];
-let indice = 0
 let selector = document.getElementById("selector");
 var valorInicio = 0
 var valorFinal = 0
-
-let uno = 1
-let dos = 2
-let tres = 3
-let cuatro = 4
-
 
 
 for (t = 1; t < ARRAY_BASE.length; t++) {
@@ -179,7 +171,7 @@ function mostrarImagenesSemiCorcheas(a,b){
     for (i = 0; i < arrayParaMostrar.length; i++) {
         for (o = 0; o < arrayParaMostrar[i].length; o++) {
             if (arrayParaMostrar[i][o] > 0) {
-                document.querySelector("#contenido").innerHTML += `${imagenSemiCorchea}`
+                document.querySelector("#contenido").innerHTML += `${imagenFusa}`
             }
             else {
                 document.querySelector("#contenido").innerHTML += `${imagenSilencio}`
